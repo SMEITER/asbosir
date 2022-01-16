@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información general</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="perfil.css" type="text/css">
+    <link rel="icon" href="img/logo_asbosir.png" type="image/x-icon" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-red">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-3 fs-5 texto-animacion" href="menuadmin.html">Menu</a>
+            <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-6 texto-animacion" aria-current="page"
+                            href="informaciogeneral.html">
+                            <img src="img/people-fill.svg" alt="informacionusuario" width="35" height="40"
+                                class="d-inline-block align-text-center"> Información general
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-6 texto-animacion" aria-current="page"
+                            href="revisionafiliacion.html">
+                            <img src="img/card-checklist.svg" alt="Afiliado" width="35" height="40"
+                                class="d-inline-block align-text-center"> Revision de afiliaciones
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="index.html">
+                            <img src="img/arrow-right-square-fill.svg" alt="Salir" width="35" height="40"
+                                class="d-inline-block align-text-center"> Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form class="row g-3 mt-5 w-100 mx-auto card-body bg-light rounded shadow">
+        <h6 class="card-title text-center text-uppercase p-2 bs-red bg-red text-white rounded titulo-card3">Modificación de datos</h6>
+        <hr>
+            <div class="col-md-4 mt-4 form-floating">
+                <input placeholder="Nombres" type="text" class="form-control" id="Nombres" required>
+                <label for="Nombres">Nombres</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <input placeholder="Apellidos" type="text" class="form-control" id="Apellidos" required>
+                <label for="Apellidos">Apellidos</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <input placeholder="Cédula" type="text" class="form-control" id="Cédula" maxlength="8" required>
+                <label for="Cédula">Cédula</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <input placeholder="Correo electronico" type="email" class="form-control" id="correo" required>
+                <label for="correo">Correo electronico</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <input placeholder="fecha de nacimiento" type="date" class="form-control " id="nacimiento" required>
+                <label for="nacimiento">fecha de nacimiento</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <select id="rango" class="form-select" required>
+                    <option disabled selected></option>
+                    <option>Raso</option>
+                    <option>Distinguido</option>
+                    <option>Cabo segundo</option>
+                    <option>Cabo primero</option>
+                    <option>Sargento segundo</option>
+                    <option>Sargento primero</option>
+                    <option>Sargento ayudante</option>
+                    <option>Teniente</option>
+                    <option>Primer teniente</option>
+                    <option>Capitán</option>
+                    <option>Mayor</option>
+                    <option>Teniente coronel</option>
+                    <option>Coronel</option>
+                    <option>General</option>
+                </select>
+                <label for="rango">Rango</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <select id="estadocivil" class="form-select" required>
+                    <option disabled selected></option>
+                    <option>Soltero</option>
+                    <option>Casado</option>
+                    <option>Viudo</option>
+                </select>
+                <label for="estadocivil">Estado civil</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <select id="sex" class="form-select" required>
+                    <option disabled selected></option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                </select>
+                <label for="sex">Sexo</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+                <select id="estadocivil" class="form-select" required>
+                    <option disabled selected></option>
+                    <option>Primaria</option>
+                    <option>Bachillerato</option>
+                    <option>Universitario</option>
+                    <option>Tecnico superior universitario</option>
+                    <option>Doctorado</option>
+                </select>
+                <label for="estadocivil">Grado de instrucción</label>
+            </div>
+            <div class="col-md-4 mt-4 form-floating">
+            <select id="estado" class="form-select" required>
+                <option disabled selected></option>
+                <option>Distrito capital</option>
+                <option>Miranda</option>
+                <option>Vargas</option>
+                <option>Amazonas</option>
+                <option>Anzoátegui</option>
+                <option>Apure</option>
+                <option>Aragua</option>
+                <option>Barinas</option>
+                <option>Bolívar</option>
+                <option>Carabobo</option>
+                <option>Cojedes</option>
+                <option>Delta Amacuro</option>
+                <option>Falcón</option>
+                <option>Guárico</option>
+                <option>Lara</option>
+                <option>Mérida</option>
+                <option>Monagas</option>
+                <option>Nueva esparta</option>
+                <option>Portuguesa</option>
+                <option>Sucre</option>
+                <option>Táchira</option>
+                <option>Trujillo</option>
+                <option>Yaracuy</option>
+                <option>Zulia</option>
+            </select>
+            <label for="estado">Estado</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="municipio" type="text" class="form-control" id="municipio" required>
+            <label for="municipio">Municipio</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="parroquia" type="text" class="form-control" id="parroquia" required>
+            <label for="parroquia">Parroquia</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="dirección donde vive" type="text" class="form-control" id="direccion" required>
+            <label for="direccion">Dirección donde vive</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Teléfono movil" type="text" class="form-control " id="movil" required>
+            <label for="movil">Teléfono movil</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Teléfono local" type="text" class="form-control " id="local" required>
+            <label for="local">Teléfono local</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendapropia" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="viviendapropia">Vivienda propia</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendaalquilada" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="viviendaalquilada">Vivienda alquilada</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendacondicion" class="form-select" required>
+                <option disabled selected></option>
+                <option>Deplorable</option>
+                <option>Regular</option>
+                <option>En buen estado</option>
+                <option>En excelente estado</option>
+            </select>
+            <label for="viviendacondicion">Condicion de la vivienda</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="patologia que posee" type="text" class="form-control" id="patologia" required>
+            <label for="patologia">Patologia que posee</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Tipo de medicamento que usa" type="text" class="form-control" id="medicamento" required>
+            <label for="medicamento">Tipo de medicamento que usa</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="seguroinde" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="seguroinde">Seguro independiente</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="seguropriv" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="seguropriv">Seguro privado</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Numero de hijos" type="number" class="form-control " id="hijo" value="" required>
+            <label for="hijo">Numero de hijos</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="hijosdis" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="hijosdis">Hijos con dispacidad</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="tipo de dispacidad de su hijo" type="text" class="form-control " id="tipodispaca"
+                required>
+            <label for="tipodiscapa">Tipo de dispacidad de su hijo</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Numero de nietos" type="number" class="form-control" id="numnietos" required>
+            <label for="numnietos">Numero de nietos</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Nombres de su conyuge" type="text" class="form-control " id="nombconyuge" required>
+            <label for="nombconyuge">Nombres de su conyuge</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Apellidos de su conyuge" type="text" class="form-control " id="apellconyuge" required>
+            <label for="apellconyuge">Apellidos de su conyuge</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Cédula de su conyuge" type="text" class="form-control " id="cedulaconyuge" required>
+            <label for="cedulaconyuge">Cédula de su conyuge</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Fecha de nacimiento conyuge " type="date" class="form-control" id="nacimientoconyuge"
+                required>
+            <label for="nacimientoconyuge">Fecha de nacimiento conyuge</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="saludconyuge" class="form-select" required>
+                <option disabled selected></option>
+                <option>Regular</option>
+                <option>Estable</option>
+            </select>
+            <label for="saludconyuge">Salud de su conyuge</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="trabajoactual" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="trabajoactual">Trabaja actualmente</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Tipo de trabajo" type="text" class="form-control" id="tipotrabajo" required>
+            <label for="tipotrabajo">Tipo de trabajo</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Nombre de la empresa" type="text" class="form-control" id="nombreempresa" required>
+            <label for="nombreempresa">Nombre de la empresa</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Otro oficio que domine" type="text" class="form-control" id="oficiodomine" required>
+            <label for="oficiodomine">Otro oficio que domine</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Numero de nomina" type="text" class="form-control" id="nomina" required>
+            <label for="nomina">Numero de nomina</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Fecha de egreso" type="date" class="form-control" id="egreso" required>
+            <label for="egreso">Fecha de egreso</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Fecha de ingreso" type="date" class="form-control" id="ingreso" required>
+            <label for="ingreso">Fecha de ingreso</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="cajaahorro" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="cajaahorro">Caja de ahorro</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="funerario" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="funerario">Servicio funerario</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="economico" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="economico">Apoyo economico</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="encuentraafiliado" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="encuentraafiliado">¿Se encuentra afiliado?</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="estadoafiliado" class="form-select" required>
+                <option disabled selected></option>
+                <option>Por revisar</option>
+                <option>No se encuentra afiliado</option>
+                <option>Se encuentra afiliado</option>
+            </select>
+            <label for="estadoafiliado">Estado de afiliación</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="fecha de fallecimiento" type="date" class="form-control " id="fallecimiento" required>
+            <label for="fallecimiento">fecha de fallecimiento</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Contraseña" type="text" class="form-control" id="contraseña" required>
+            <label for="contraseña">Contraseña</label>
+        </div>
+          <div class="col-12 mt-4 text-center">
+        <button type="submit " class="btn btn-danger me-2 ms-2">Guardar</button>
+        <a class="btn btn-danger" href="informaciogeneral.html">Regresar</a>
+        </div>
+        </form>
+        
+        <p class="mt-5 w-50 text-center mx-auto text-muted">
+            ASBOSIR 2022 © <br> Cuartel Central de Bomberos "Tcnel. (B) Victoriano Jordán P. Avenida Lecuna".
+        </p>
+
+        <script type="text/javascript " src="bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision afiliación</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="afiliacion.css" type="text/css">
+    <link rel="icon" href="img/logo_asbosir.png" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-red">
+    <div class="container-fluid">
+        <a class="navbar-brand mx-3 fs-5 texto-animacion" href="menuadmin.html">Menu</a>
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active fs-6 texto-animacion" aria-current="page"
+                        href="informaciogeneral.html">
+                        <img src="img/people-fill.svg" alt="informacionusuario" width="35" height="40"
+                            class="d-inline-block align-text-center"> Información general
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active fs-6 texto-animacion" aria-current="page"
+                        href="revisionafiliacion.html">
+                        <img src="img/card-checklist.svg" alt="Afiliado" width="35" height="40"
+                            class="d-inline-block align-text-center"> Revisión de afiliaciones
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="index.html">
+                        <img src="img/arrow-right-square-fill.svg" alt="Salir" width="35" height="40"
+                            class="d-inline-block align-text-center"> Cerrar sesión
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<form class="row g-3 mt-5 w-100 mx-auto card-body bg-light rounded shadow">
+    <h6 class="card-title text-center text-uppercase p-2 bg-red text-white rounded titulo-card">Datos sobre la &nbsp;afiliación</h6>
+<hr>
+<div class="col-md-4 mt-4 form-floating">
+    <input placeholder="Numero de nomina" type="text" class="form-control" id="nomina" required>
+    <label for="nomina">Numero de nomina</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <input placeholder="Fecha de egreso" type="date" class="form-control" id="egreso" required>
+    <label for="egreso">Fecha de egreso</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <input placeholder="Fecha de ingreso" type="date" class="form-control" id="ingreso" required>
+    <label for="ingreso">Fecha de ingreso</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <select id="cajaahorro" class="form-select" required>
+        <option disabled selected></option>
+        <option>Si</option>
+        <option>No</option>
+    </select>
+    <label for="cajaahorro">Caja de ahorro</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <select id="funerario" class="form-select" required>
+        <option disabled selected></option>
+        <option>Si</option>
+        <option>No</option>
+    </select>
+    <label for="funerario">Servicio funerario</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <select id="economico" class="form-select" required>
+        <option disabled selected></option>
+        <option>Si</option>
+        <option>No</option>
+    </select>
+    <label for="economico">Apoyo economico</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <select id="encuentraafiliado" class="form-select" required>
+        <option disabled selected></option>
+        <option>Si</option>
+        <option>No</option>
+    </select>
+    <label for="encuentraafiliado">¿Se encuentra afiliado?</label>
+</div>
+<div class="col-md-4 mt-4 form-floating">
+    <select id="estadoafiliado" class="form-select" required>
+        <option selected>Por revisar</option>
+        <option>No se encuentra afiliado</option>
+        <option>Se encuentra afiliado</option>
+    </select>
+    <label for="estadoafiliado">Estado de afiliación</label>
+</div> 
+</form>
+
+</html>    
+</body>

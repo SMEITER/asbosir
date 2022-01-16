@@ -1,0 +1,18 @@
+.cards-registro {
+    background-color: #ce1828;
+    width: 300px;
+    text-shadow: 1px 2px 2px black;
+}
+
+form {
+    max-width: 800px;
+}
+
+.bg-red {
+    background-color: #ce1828;
+    text-shadow: 1px 2px 2px black;
+}
+
+.titulo-cardregistro{
+    width: 120px;
+}

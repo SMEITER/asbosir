@@ -1,0 +1,24 @@
+.bg-red {
+    background-color: #ce1828;
+    text-shadow: 1px 2px 2px black;
+}
+
+.texto-animacion{
+    text-decoration: none;
+    transition: all 200ms;
+   
+
+}
+
+.texto-animacion:hover{
+    transform: scale(1.2, 1.2);
+     text-decoration: none;
+}
+
+form {
+    max-width: 800px;
+}
+
+.titulo-card{
+    width: 240px;
+}

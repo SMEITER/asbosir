@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="registrarse.css" type="text/css">
+    <link rel="icon" href="img/logo_asbosir.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="shadow p-3 mb-4 d-none d-sm-block">
+        SISTEMA DE REGISTRO DE LA &nbsp;ASOCIACIÓN DE BOMBEROS EN SITUACIÓN DE RETIRO (ASBOSIR)
+    </header>
+
+    <div class="card mx-auto cards-registro mb-5 mt-3">
+        <div class="card-body text-center text-white shadow ">
+            Por favor, registre todos sus datos correctamente.
+        </div>
+    </div>
+
+    <form class="row g-3 w-100 mx-auto card-body bg-light rounded shadow">
+        <h5 class="card-title text-center text-uppercase p-2 bg-red text-white rounded titulo-cardregistro ">Registro</h5>
+        <hr>
+        <div class="col-md-6 mt-4 form-floating">
+            <input placeholder="Nombres" type="text" class="form-control" id="Nombres" required>
+            <label for="Nombres">Nombres</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <input placeholder="Apellidos" type="text" class="form-control" id="Apellidos" required>
+            <label for="Apellidos">Apellidos</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <input placeholder="Cédula" type="text" class="form-control" id="Cédula" maxlength="8" required>
+            <label for="Cédula">Cédula</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating ">
+            <input placeholder="Contraseña" type="password" class="form-control" id="password"  required>
+            <label for="password">Contraseña</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <input placeholder="Correo electronico" type="email" class="form-control" id="correo"  required>
+            <label for="correo">Correo electronico</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <input placeholder="fecha de nacimiento" type="date" class="form-control " id="nacimiento" required>
+            <label for="nacimiento">fecha de nacimiento</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="rango" class="form-select" required>
+                <option disabled selected></option>
+                <option>Raso</option>
+                <option>Distinguido</option>
+                <option>Cabo segundo</option>
+                <option>Cabo primero</option>
+                <option>Sargento segundo</option>
+                <option>Sargento primero</option>
+                <option>Sargento ayudante</option>
+                <option>Teniente</option>
+                <option>Primer teniente</option>
+                <option>Capitán</option>
+                <option>Mayor</option>
+                <option>Teniente coronel</option>
+                <option>Coronel</option>
+                <option>General</option>
+            </select>
+            <label for="rango">Rango</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="estadocivil" class="form-select" required>
+                <option disabled selected></option>
+                <option>Soltero</option>
+                <option>Casado</option>
+                <option>Viudo</option>
+            </select>
+            <label for="estadocivil">Estado civil</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="sex" class="form-select" required>
+                <option disabled selected></option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+            </select>
+            <label for="sex">Sexo</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="estadocivil" class="form-select" required>
+                <option disabled selected></option>
+                <option>Primaria</option>
+                <option>Bachillerato</option>
+                <option>Universitario</option>
+                <option>Tecnico superior universitario</option>
+                <option>Doctorado</option>
+            </select>
+            <label for="estadocivil">Grado de instrucción</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="estado" class="form-select" required>
+                <option disabled selected></option>
+                <option>Distrito capital</option>
+                <option>Miranda</option>
+                <option>Vargas</option>
+                <option>Amazonas</option>
+                <option>Anzoátegui</option>
+                <option>Apure</option>
+                <option>Aragua</option>
+                <option>Barinas</option>
+                <option>Bolívar</option>
+                <option>Carabobo</option>
+                <option>Cojedes</option>
+                <option>Delta Amacuro</option>
+                <option>Falcón</option>
+                <option>Guárico</option>
+                <option>Lara</option>
+                <option>Mérida</option>
+                <option>Monagas</option>
+                <option>Nueva esparta</option>
+                <option>Portuguesa</option>
+                <option>Sucre</option>
+                <option>Táchira</option>
+                <option>Trujillo</option>
+                <option>Yaracuy</option>
+                <option>Zulia</option>
+            </select>
+            <label for="estado">Estado</label>
+        </div>
+        <div class="col-md-6 mt-4 form-floating">
+            <select id="estadocivil" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="estadocivil">¿Se encuentra afiliado?</label>
+        </div>
+        <div class="col-12 mt-4 text-center">
+            <button type="submit " class="btn btn-danger me-2">Continuar</button>
+            <a class="btn btn-danger" href="index.html">Regresar</a>
+        </div>
+    </form>
+
+    <p class="mt-5 w-50 text-center mx-auto text-muted">
+        ASBOSIR 2022 © <br> Cuartel Central de Bomberos "Tcnel. (B) Victoriano Jordán P. Avenida Lecuna".
+    </p>
+
+    <script type="text/javascript " src="bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>
