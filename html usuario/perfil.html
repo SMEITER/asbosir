@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,45 +15,48 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-red">
         <div class="container-fluid">
-          <a class="navbar-brand mx-3 fs-5 texto-animacion" href="menu.html">Menu</a>
-          <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand mx-3 fs-5 texto-animacion" href="menu.html">Menu</a>
+            <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-3">
                         <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="perfil.html">
-                            <img src="../img/person-circle.svg" alt="Perfilusuario" width="35" height="40" 
-                            class="d-inline-block align-text-center"> Perfil
+                            <img src="../img/person-circle.svg" alt="Perfilusuario" width="35" height="40"
+                                class="d-inline-block align-text-center"> Perfil
                         </a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="datossocio.html">
-                            <img src="../img/bar-chart-fill.svg" alt="datosocieconomicos" width="35" height="40" 
-                            class="d-inline-block align-text-center"> Datos socieconomicos
+                            <img src="../img/bar-chart-fill.svg" alt="datosocieconomicos" width="35" height="40"
+                                class="d-inline-block align-text-center"> Datos socieconomicos
                         </a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="afiliacion.html">
-                            <img src="../img/award-fill.svg" alt="Afiliado" width="35" height="40" 
-                            class="d-inline-block align-text-center"> Afiliación
+                            <img src="../img/award-fill.svg" alt="Afiliado" width="35" height="40"
+                                class="d-inline-block align-text-center"> Afiliación
                         </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-3">
                         <a class="nav-link active fs-6 texto-animacion" aria-current="page" href="../index.html">
-                            <img src="../img/arrow-right-square-fill.svg" alt="Salir" width="35" height="40" 
-                            class="d-inline-block align-text-center"> Cerrar sesión
-                        </a> 
+                            <img src="../img/arrow-right-square-fill.svg" alt="Salir" width="35" height="40"
+                                class="d-inline-block align-text-center"> Cerrar sesión
+                        </a>
                     </li>
                 </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <form class="row g-3 mt-5 w-100 mx-auto card-body bg-light rounded shadow">
-            <h6 class="card-title text-center text-uppercase p-2 bg-red text-white rounded titulo-card">Información personal</h6>
+    <form class="row g-3 mt-5 w-100 mx-auto card-body bg-light rounded shadow">
+        <h6 class="card-title text-center text-uppercase p-2 bg-red text-white rounded titulo-card">Información personal
+        </h6>
         <hr>
         <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Nombres" type="text" class="form-control" id="Nombres" required>
@@ -76,7 +80,7 @@
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <select id="rango" class="form-select" required>
-                <option disabled selected ></option>
+                <option disabled selected></option>
                 <option>Raso</option>
                 <option>Distinguido</option>
                 <option>Cabo segundo</option>
@@ -96,7 +100,7 @@
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <select id="estadocivil" class="form-select" required>
-                <option disabled selected ></option>
+                <option disabled selected></option>
                 <option>Soltero</option>
                 <option>Casado</option>
                 <option>Viudo</option>
@@ -105,7 +109,7 @@
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <select id="sex" class="form-select" required>
-                <option disabled selected ></option>
+                <option disabled selected></option>
                 <option>Masculino</option>
                 <option>Femenino</option>
                 <option>Otro</option>
@@ -114,7 +118,7 @@
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <select id="estadocivil" class="form-select" required>
-                <option disabled selected ></option>
+                <option disabled selected></option>
                 <option>Primaria</option>
                 <option>Bachillerato</option>
                 <option>Universitario</option>
@@ -130,89 +134,90 @@
     </form>
 
     <form class="row g-3 mt-5 w-100 mx-auto card-body bg-light rounded shadow">
-        <h6 class="card-title text-center text-uppercase p-2 bs-red bg-red text-white rounded titulo-card2">Datos de ubicación</h6>
-    <hr>
-    <div class="col-md-4 mt-4 form-floating">
-        <select id="estado" class="form-select" required>
-            <option disabled selected></option>
-            <option>Distrito capital</option>
-            <option>Miranda</option>
-            <option>Vargas</option>
-            <option>Amazonas</option>
-            <option>Anzoátegui</option>
-            <option>Apure</option>
-            <option>Aragua</option>
-            <option>Barinas</option>
-            <option>Bolívar</option>
-            <option>Carabobo</option>
-            <option>Cojedes</option>
-            <option>Delta Amacuro</option>
-            <option>Falcón</option>
-            <option>Guárico</option>
-            <option>Lara</option>
-            <option>Mérida</option>
-            <option>Monagas</option>
-            <option>Nueva esparta</option>
-            <option>Portuguesa</option>
-            <option>Sucre</option>
-            <option>Táchira</option>
-            <option>Trujillo</option>
-            <option>Yaracuy</option>
-            <option>Zulia</option>
-        </select>
-        <label for="estado">Estado</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <input placeholder="municipio" type="text" class="form-control" id="municipio" required>
-        <label for="municipio">Municipio</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <input placeholder="parroquia" type="text" class="form-control" id="parroquia" required>
-        <label for="parroquia">Parroquia</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <input placeholder="dirección donde vive" type="text" class="form-control" id="direccion" required>
-        <label for="direccion">Dirección donde vive</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <input placeholder="Teléfono movil" type="text" class="form-control " id="movil" required>
-        <label for="movil">Teléfono movil</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <input placeholder="Teléfono local" type="text" class="form-control " id="local" required>
-        <label for="local">Teléfono local</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <select id="viviendapropia" class="form-select" required>
-            <option disabled selected></option>
-            <option>Si</option>
-            <option>No</option>
-        </select>
-        <label for="viviendapropia">Vivienda propia</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <select id="viviendaalquilada" class="form-select" required>
-            <option disabled selected></option>
-            <option>Si</option>
-            <option>No</option>
-        </select>
-        <label for="viviendaalquilada">Vivienda alquilada</label>
-    </div>
-    <div class="col-md-4 mt-4 form-floating">
-        <select id="viviendacondicion" class="form-select" required>
-            <option disabled selected></option>
-            <option>Deplorable</option>
-            <option>Regular</option>
-            <option>En buen estado</option>
-            <option>En excelente estado</option>
-        </select>
-        <label for="viviendacondicion">Condicion de la vivienda</label>
-    </div>
-    <div class="col-12 mt-4 text-center">
-        <button type="submit " class="btn btn-danger">Actualizar</button>
-        <button type="submit " class="btn btn-danger ms-2">Guardar</button>
-    </div>
-</form>
+        <h6 class="card-title text-center text-uppercase p-2 bs-red bg-red text-white rounded titulo-card2">Datos de
+            ubicación</h6>
+        <hr>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="estado" class="form-select" required>
+                <option disabled selected></option>
+                <option>Distrito capital</option>
+                <option>Miranda</option>
+                <option>Vargas</option>
+                <option>Amazonas</option>
+                <option>Anzoátegui</option>
+                <option>Apure</option>
+                <option>Aragua</option>
+                <option>Barinas</option>
+                <option>Bolívar</option>
+                <option>Carabobo</option>
+                <option>Cojedes</option>
+                <option>Delta Amacuro</option>
+                <option>Falcón</option>
+                <option>Guárico</option>
+                <option>Lara</option>
+                <option>Mérida</option>
+                <option>Monagas</option>
+                <option>Nueva esparta</option>
+                <option>Portuguesa</option>
+                <option>Sucre</option>
+                <option>Táchira</option>
+                <option>Trujillo</option>
+                <option>Yaracuy</option>
+                <option>Zulia</option>
+            </select>
+            <label for="estado">Estado</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="municipio" type="text" class="form-control" id="municipio" required>
+            <label for="municipio">Municipio</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="parroquia" type="text" class="form-control" id="parroquia" required>
+            <label for="parroquia">Parroquia</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="dirección donde vive" type="text" class="form-control" id="direccion" required>
+            <label for="direccion">Dirección donde vive</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Teléfono movil" type="text" class="form-control " id="movil" required>
+            <label for="movil">Teléfono movil</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Teléfono local" type="text" class="form-control " id="local" required>
+            <label for="local">Teléfono local</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendapropia" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="viviendapropia">Vivienda propia</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendaalquilada" class="form-select" required>
+                <option disabled selected></option>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <label for="viviendaalquilada">Vivienda alquilada</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <select id="viviendacondicion" class="form-select" required>
+                <option disabled selected></option>
+                <option>Deplorable</option>
+                <option>Regular</option>
+                <option>En buen estado</option>
+                <option>En excelente estado</option>
+            </select>
+            <label for="viviendacondicion">Condicion de la vivienda</label>
+        </div>
+        <div class="col-12 mt-4 text-center">
+            <button type="submit " class="btn btn-danger">Actualizar</button>
+            <button type="submit " class="btn btn-danger ms-2">Guardar</button>
+        </div>
+    </form>
 
     <p class="mt-5 w-50 text-center mx-auto text-muted">
         ASBOSIR 2022 © <br> Cuartel Central de Bomberos "Tcnel. (B) Victoriano Jordán P. Avenida Lecuna".
@@ -220,4 +225,5 @@
 
     <script type="text/javascript " src="../bootstrap/js/bootstrap.min.js "></script>
 </body>
+
 </html>
