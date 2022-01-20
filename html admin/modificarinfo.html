@@ -99,7 +99,9 @@
                 <option disabled selected></option>
                 <option>Soltero</option>
                 <option>Casado</option>
+                <option>Divorciado</option>
                 <option>Viudo</option>
+                <option>Otro</option>
             </select>
             <label for="estadocivil">Estado civil</label>
         </div>
@@ -117,8 +119,11 @@
                 <option disabled selected></option>
                 <option>Primaria</option>
                 <option>Bachillerato</option>
-                <option>Universitario</option>
                 <option>Tecnico superior universitario</option>
+                <option>Universitario</option>
+                <option>Postgrado</option>
+                <option>Especialista</option>
+                <option>Maestria</option>
                 <option>Doctorado</option>
             </select>
             <label for="estadocivil">Grado de instrucción</label>
@@ -224,6 +229,14 @@
             <label for="seguropriv">Seguro privado</label>
         </div>
         <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Familiares con los que vive" type="number" class="form-control " id="nucleofamiliar" required>
+            <label for="nucleofamiliar">Familiares con los que vive</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Integrantes de su nucleo familiar" type="text" class="form-control" id="patologia" required>
+            <label for="patologia">Describa su nucleo familiar</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Numero de hijos" type="number" class="form-control " id="hijo" value="" required>
             <label for="hijo">Numero de hijos</label>
         </div>
@@ -284,6 +297,10 @@
         <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Nombre de la empresa" type="text" class="form-control" id="nombreempresa" required>
             <label for="nombreempresa">Nombre de la empresa</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Telefono de la empresa" type="text" class="form-control" id="telefonoempresa" required>
+            <label for="telefonoempresa">Telefono de la empresa</label>
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Otro oficio que domine" type="text" class="form-control" id="oficiodomine" required>

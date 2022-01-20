@@ -83,8 +83,26 @@
             <label for="seguropriv">Seguro privado</label>
         </div>
         <div class="col-md-4 mt-4 form-floating">
-            <input placeholder="Numero de hijos" type="number" class="form-control " id="hijo" value="" required>
-            <label for="hijo">Numero de hijos</label>
+            <select id="viviendacondicion" class="form-select" required>
+                <option disabled selected></option>
+                <option>Deplorable</option>
+                <option>Regular</option>
+                <option>En buen estado</option>
+                <option>En excelente estado</option>
+            </select>
+            <label for="viviendacondicion">Condicion de la vivienda</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Familiares con los que vive" type="number" class="form-control " id="nucleofamiliar" required>
+            <label for="nucleofamiliar">Familiares con los que vive</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Integrantes de su nucleo familiar" type="text" class="form-control" id="patologia" required>
+            <label for="patologia">Describa su nucleo familiar</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Hijos menores a 25 años" type="number" class="form-control " id="hijo" required>
+            <label for="hijo">Hijos menores a 25 años</label>
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <select id="hijosdis" class="form-select" required>
@@ -143,6 +161,10 @@
         <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Nombre de la empresa" type="text" class="form-control" id="nombreempresa" required>
             <label for="nombreempresa">Nombre de la empresa</label>
+        </div>
+        <div class="col-md-4 mt-4 form-floating">
+            <input placeholder="Telefono de la empresa" type="text" class="form-control" id="telefonoempresa" required>
+            <label for="telefonoempresa">Telefono de la empresa</label>
         </div>
         <div class="col-md-4 mt-4 form-floating">
             <input placeholder="Otro oficio que domine" type="text" class="form-control" id="oficiodomine" required>
